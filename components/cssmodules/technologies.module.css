@@ -1,0 +1,213 @@
+.container {
+    background: var(--bg-technology-mobile);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4.89rem 0 5.78rem;
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.container div img {
+    width: 100%;
+    height: auto;
+    margin: 1.7rem auto 0;
+}
+.container ul {
+    display: flex;
+    padding: 0;
+    margin: 1.77rem auto;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.container ul button {
+    width: 2.23rem;
+    height: 2.23rem;
+    background: transparent;
+    opacity: 0.7;
+    border-radius: 50%;  
+    margin: 0 0.5rem 0;
+    cursor: pointer;
+    color: var(--color-main-light);
+    font-family: inherit;
+    border: 1px solid var(--color-main-light);
+}
+
+.container ul button:hover {
+    opacity: 1;
+}
+
+.container ul button.activeBtn {
+    opacity: 1;
+    background: var(--color-main-light);
+    color: var(--color-main-dark);
+}
+
+.container h2 {
+    margin: 0 auto 0.44rem;
+    font-family: var(--heading-font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.83rem;
+    line-height: 18px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-main-light);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+.container h3 {
+    margin: 0 auto 0.83rem;
+    font-family: var(--heading-font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-main-light);
+}
+
+.container figure {
+    margin: 0;
+    padding: 0;
+}
+
+.container p {
+    margin: 0 auto;
+    padding: 0;
+    font-family: var(--default-font);
+    max-width: 95%;
+}
+
+@media (min-width: 768px) {
+    .container {
+        background: var(--bg-technology-tablet);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 7.55rem 0  0;
+        margin: 0 auto 0;
+    }
+
+    .container figure {
+        margin: 2rem auto 0;
+    }
+    .container h1 {
+       padding: 4rem 2.5rem 0;
+    }
+    .container div img {
+        margin: 0;
+    }
+    .container figure figcaption ul {
+        margin: 3rem auto 0;  
+    }
+    .container h2 {
+        margin: 3.33rem auto 0.44rem;
+        font-size: 1.3rem;
+        line-height: 1.56rem;
+    }
+    .container h3 {
+        margin: 0.44rem auto 0.88rem;
+        font-size: 2.23rem;
+        line-height: 2.55rem;
+    }
+    .container p {
+        margin: 0 auto 0;
+        padding: 0 0 3.83rem;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 0.88rem;
+        line-height: 28px;
+        max-width: 25.44rem;
+    }
+}
+
+@media (min-width: 1110px) {
+    .container {
+        background: var(--bg-technology-desktop);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 8rem 0 8rem 7rem;
+        margin: 0; 
+    }
+
+    .container h1 {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.55rem;
+        line-height: 1.88rem;
+        letter-spacing: 4.725px;
+    }
+
+    .container figure {
+        display: grid;
+        padding: 0;
+    }
+
+    .container figure>div {
+        grid-area: 1/2/2/3;
+        align-self: stretch;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container div img {
+        max-width: 70%;
+        margin: 0 0 0 auto;
+    }
+
+    .container figure figcaption {
+        grid-area: 1/1/2/2;
+        align-self: center;
+        display: grid;
+    }
+    .container h2,
+    .container h3,
+    .container p {
+        text-align: left;
+        margin: 0;
+    }
+
+    .container h2 {
+        margin: 8.5rem 0 0.83rem;
+        align-self: flex-end;
+        grid-area: 1/2/2/3;
+        font-size: 0.88rem;
+        line-height: 19.2px;
+        letter-spacing: 2.7px;
+    }
+
+    .container h3 {
+        margin: 0 0 15px;
+        align-self: center;
+        font-family: var(--heading-font-family);
+        font-style: normal;
+        font-weight: normal;
+        font-size: 56px;
+        line-height: 64px;
+        text-transform: uppercase;
+        grid-area: 2/2/3/3;
+    }
+
+    .container p {
+        align-self: center;
+        grid-area: 3/2/4/3;
+    }
+
+    .container figure figcaption ul {
+        display: flex;
+        padding: 0; 
+        margin: 5rem 1.5rem 0 0;
+        flex-direction: column;
+        grid-area: 1/1/4/2;
+        justify-content: center;
+    }
+    .container ul button {
+        width: 4.46rem;
+        height: 4.46rem;
+        margin: 0.85rem auto;
+        font-size: 1.7rem;
+    }
+}

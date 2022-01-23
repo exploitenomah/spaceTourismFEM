@@ -1,0 +1,209 @@
+
+
+
+
+.header{
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  padding: 1.33rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_nav{
+    margin-left: auto;
+}
+.navBtn{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+.navBtn:hover{
+    transform: scale(1.05);
+}
+.navBtn:active{
+    transform: scale(.95);
+}
+.header nav{
+    z-index: 1;
+}
+.header nav > ul{
+   position: fixed;
+   width: 67.73%;
+   min-height: 100vh;
+   right: 0;
+   top: 0;
+   background: rgba(255, 255, 255, 0.04);
+   backdrop-filter: blur(5.09rem);
+   margin: 0;
+   list-style-type: none;
+   transform: translateX(100vw);
+   transform-origin: top right;      
+   opacity: 0;
+   visibility: hidden;
+   padding: 6.56rem 0 0 0;
+   transition: transform .5s linear;
+}
+.header nav > ul.header_nav_list {
+   transform: translateX(0);
+   opacity: 1;
+   visibility: visible;
+}
+
+.header nav > ul button {
+    position: fixed;
+    top: 1.88rem; 
+    right: 8.23%;
+    opacity: 0;
+    visibility: hidden;
+    transition:all .5s linear;
+    transition-delay: .5s;
+}
+.header nav>ul.header_nav_list button {
+    position: fixed;
+    top: 1.88rem;
+    right: 8.23%;
+    opacity: 1;
+    visibility: visible;
+}
+.header nav > ul  li{
+    list-style-type: none;
+    font-family: var(--regular-font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--new-text-fs);
+    line-height: var(--line-height-sm);
+    letter-spacing: var(--letter-spacing-md);
+    margin-bottom: 2.83rem;
+    text-transform: uppercase;
+    transition: all .4s ease;
+}
+.header nav>ul li.activeItem {
+    color: var(--color-sub-light);
+}
+.navLink:link,
+.navLink:visited{
+    color: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    text-decoration: none; 
+}
+.navLink b{
+    font-family: var(--regular-font-family);
+    font-weight: bold;
+}
+@media (min-width: 768px) {
+    .header {
+        padding: 0;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1.33rem;
+    }
+   .navBtn {
+      display: none;
+      visibility: hidden;
+   }
+   .header nav{
+       align-self: flex-start;
+   }
+   .header nav > ul {
+       position: static;
+       top: unset;
+       right: unset;
+       width: unset;
+       min-height: unset;
+       height: 5.33rem;
+       background: rgba(255, 255, 255, 0.04);
+       backdrop-filter: blur(4.53rem);
+       margin: 0;
+       list-style-type: none;
+       transform: translateX(0);
+       transform-origin: unset;
+       opacity: 1;
+       visibility: visible;
+       padding:  0 0 0;
+       overflow: visible;
+   }
+   .header nav ul li ul,
+   .header nav > ul {
+       display: flex;  
+       justify-content: center;
+       align-items: center;
+       padding: 0 1.64rem 0 0;
+   }
+   .header nav > ul li {
+       margin: auto 0 auto 1.64rem; 
+       font-size: var(--sub-heading-fs);
+       line-height: 17px;
+       letter-spacing: var(--letter-spacing-sm);
+       border-bottom: 3px solid transparent;
+   }
+   .header nav>ul li.activeItem {
+       color: inherit;
+       border-bottom: 3px solid currentColor;
+   }
+   .header nav>ul li ul li:hover {
+       border-bottom: 3px solid #ffffff80;
+   }
+   .navLink:link,
+   .navLink:visited {
+      min-height: 5.1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+   .navLink b {
+       display: none;
+       visibility: hidden;
+   }
+}  
+@media (min-width: 1035px){
+    .header {
+        padding: 2.22rem 0 0 3.05rem;
+    }
+    .logo{
+        margin: 0;
+    }
+    .header nav::before{
+        content: '';
+        position: absolute;
+        width: 26.27rem;
+        height: 1px;
+        left: 9.27rem;
+        top: 4.89rem;
+        background: var(--color-main-light);
+        mix-blend-mode: normal;
+        opacity: 0.25;
+    }
+    .header nav ul li > ul{
+        padding: 0 16rem ;
+        width: 57.64vw;
+    }  
+    .header nav > ul li  li:not(:last-child) {
+        margin: 0 2.67rem 0 0;
+    } 
+    .navLink:link,
+    .navLink:visited {
+        min-height: 5.15rem;
+    }
+    .navLink b { 
+        display: initial;
+        visibility: visible;
+        font-weight: bold;
+        font-size: var(--new-text-fs);
+        line-height: 19px;
+        letter-spacing: 2.7px;
+        margin: 0 .5rem 0 0;
+    }   
+}

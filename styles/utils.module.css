@@ -1,0 +1,92 @@
+.headingDefault {
+    margin: 0;
+    font-family: var(--regular-font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--new-text-fs);
+    line-height: 1.05rem;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width: 768px){
+    .headingDefault {
+        margin: 0;
+        text-align: left;
+        justify-content: flex-start;
+        font-size: 1.11rem;
+    }
+}
+.heading2default{
+    font-family: var(--heading-font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: var(--h3-font-size);
+    line-height: 3.54rem;
+    text-transform: uppercase;
+    margin: 0 auto;
+}
+.boldNum{
+    mix-blend-mode: normal;
+    opacity: 0.25;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+.paragraphDefault{
+    font-family: var(--default-font);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.83rem;
+    line-height: 1.38rem;
+    color:var(--color-main-light);
+    max-width: 31.83rem;
+    margin: 0 auto;
+    letter-spacing: .3px;  
+}
+.subHeading2{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.78rem;
+    line-height: 1.11rem;
+    letter-spacing: 2.3625px;
+    text-transform: uppercase;
+    color: var(--color-sub-light);
+    margin-bottom: .6rem;
+}
+.subHeading1{
+  font-family: var(--heading-font-family);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.55rem;
+  line-height: 1.77rem;
+  text-transform: uppercase;
+  color: var(--color-main-light);
+}
+.flexColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}
+
+.thinHr{
+    height: 1px;
+    background: #383B4B;
+    border: none;
+    max-width: 31.83rem;
+}
+.BellefairFF{
+    font-family: var(--heading-font-family)
+}
+@media (min-width: 768px){
+    .flexRow{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+}
+

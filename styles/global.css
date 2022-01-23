@@ -1,0 +1,78 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap');
+:root{
+  --color-main-dark: hsl(230, 35%, 7%);
+  --color-main-light: rgb(255, 255, 255);
+  --color-sub-light: rgb(208, 214, 249);
+  --default-font-size: 112.5%;
+  --h1-font-size: 8.3rem;
+  --h2-font-size: 5.56rem ;
+  --h3-font-size:3.11rem ;
+  --h4-font-size: 1.78rem ;
+  --h5-font-size: 1.56rem;
+  --sub-heading-fs: 0.78rem;
+  --new-text-fs: 0.89rem;
+  --letter-spacing-lg: 4.75px;
+  --letter-spacing-md: 2.7px;
+  --letter-spacing-sm: 2.35px;
+  --line-height-lg: 25px;
+  --line-height-md: 23px;
+  --line-height-sm: 19px;
+  --bg-home-mobile: url(/images/home/background-home-mobile.jpg);
+  --bg-home-tablet: url(/images/home/background-home-tablet.jpg);
+  --bg-home-desktop: url(/images/home/background-home-desktop.jpg);
+  --bg-destination-mobile: url(/images/destination/background-destination-mobile.jpg);
+  --bg-destination-tablet: url(/images/destination/background-destination-tablet.jpg);
+  --bg-destination-desktop: url(/images/destination/background-destination-desktop.jpg);
+  --bg-crew-mobile: url(/images/crew/background-crew-mobile.jpg);
+  --bg-crew-tablet: url(/images/crew/background-crew-tablet.jpg);
+  --bg-crew-desktop: url(/images/crew/background-crew-desktop.jpg);
+  --bg-technology-mobile: url(/images/technology/background-technology-mobile.jpg);
+  --bg-technology-tablet: url(/images/technology/background-technology-tablet.jpg);
+  --bg-technology-desktop: url(/images/technology/background-technology-desktop.jpg);
+  --heading-font-family: 'Bellefair', serif;;
+  --regular-font-family: 'Barlow Condensed', sans-serif;
+ --default-font: 'Barlow', sans-serif;
+} 
+html{
+  font-size: 112.5%;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--default-font);
+  line-height: 1.6;
+  font-size: 18px;  
+  color: var(--color-main-light);
+  background: black;
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+}
+
+a, button { 
+  border: 1px solid transparent;
+  transition: all .2s linear;
+}
+
+a:hover {
+  text-decoration: none;
+}
+a:focus-visible, button:focus-visible{
+  outline: none;
+  border: 1px dotted var(--color-main-light)  ;
+}
+a:hover, button:hover{
+  transform: scale(1.05);
+}
+a:active, button:active{
+  transform: scale(.95);
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+abbr{
+  text-decoration: none;
+}
