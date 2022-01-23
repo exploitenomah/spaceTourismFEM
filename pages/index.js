@@ -1,5 +1,4 @@
 
-import Layout, { siteTitle } from "../components/layout";
 import HomeComponent from '../components/homeComponent'
 
 import { getPagesData } from '../lib/links'
