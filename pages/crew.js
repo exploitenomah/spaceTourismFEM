@@ -5,7 +5,7 @@ import { getPagesData } from "../lib/links";
 import { getData } from "../lib/getData"
 import useSlider from "../lib/customHooks/useSlider"; 
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const data = await getData("crew");
   const allLinks = getPagesData();
   const siteTitle = "Space Tourism || Crew";
@@ -14,7 +14,7 @@ export async function getStaticProps() {
       allLinks,
       data,
       siteTitle,
-    },
+    }, 
   };
 }
 

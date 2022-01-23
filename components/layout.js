@@ -8,9 +8,11 @@ import utilStyles from "../styles/utils.module.css";
 import Link from "next/link";
 import { useState, useEffect} from 'react'
 
+
 export default function Layout({ children, allLinks, siteTitle }) {
 
   const [navOpen, setNavOpen] = useState(false)
+  // const [absoluteUrl, setAbsoluteUrl] = useState('')
   const [currentLocation, setCurrentLocation] = useState('');
   const toggleNavOpen = () => {
     setNavOpen(navopen => {return !navopen})
@@ -21,13 +23,14 @@ export default function Layout({ children, allLinks, siteTitle }) {
     setNavOpen(false)
    }
   }
-  useEffect(() => {
-    setCurrentLocation(
-      globalThis.location.pathname.slice(1) === ""
-        ? "home"
-        : globalThis.location.pathname.slice(1)
-    );
-  }, []);
+  // useEffect(() => {
+  //   setCurrentLocation(
+  //     globalThis.location.pathname.slice(1) === ""
+  //       ? "home"
+  //       : globalThis.location.pathname.slice(1)
+  //   );
+  //   setAbsoluteUrl(globalThis.location.origin);
+  // }, []);
 
   return (
     <div onClick={(e) => { closeNav(e)}}>
